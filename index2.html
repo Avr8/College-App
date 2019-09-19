@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title> Login Page </title>
+	<link rel="stylesheet" type="text/css" href="index3.css">
+	<script type="text/javascript" language="javascript">
+		function validate()
+		{
+			var  user1 = document.getElementById("user").value; 
+			var pass1 = document.getElementById("pass").value; 
+			var regx = /^[a-zA-Z]+@[a-zA-Z]+\.com$/;
+			var regx1 = /.{4,}/;
+			if(regx.test(user1)&& regx1.test(pass1))
+			{
+					alert("Hello "+ user1);
+
+			}
+
+			else
+			{
+				
+				
+					alert("Sorry Enter Valid Value");
+
+			}
+		}
+
+	</script>
+</head>
+<body>
+	
+	<div class="loginbox">
+		<img src="avatar.jpg" class="avatar">
+		<h1> Login Here </h1>
+		<form>
+			<p>Username
+				<input id ="user" type="text" name="" placeholder="Enter Username"></p>
+				<p>Password
+					<input  id = "pass" type="password" name="" placeholder="Enter Password"></p>
+					<input type="button" name="" value="Login" onclick="validate()">
+					<a href="#">Lost Your Password?</a><br>
+					<a href="#">Sign Up</a>
+				</form>
+			</div>	
+
+		</body>
+		</html>
